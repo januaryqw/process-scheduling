@@ -243,7 +243,7 @@ def main(argv):
     RR_schedule, RR_avg_waiting_time =  RR_scheduling(process_list,time_quantum = optimal_q)
     write_output('RR_{}.txt'.format(optimal_q), RR_schedule, RR_avg_waiting_time )
 
-    # find the optimal value of alpha [0, 1] with precision 2
+    # find the optimal value of alpha [0, 1] with precision 1
     print ("Finding optimal alpha for SJF ----")
     least_awt = float("inf")
     optimal_alpha = 0
